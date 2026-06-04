@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — LUMIS Audio</title>
+  <meta name="description" content="Explore the full LUMIS headphone collection. Pro X, Studio, and Air — find your perfect sound." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/products.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">LUMIS</a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="products.html" class="nav__link active">Products</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="btn-cart" id="cartBtn" aria-label="Cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav__burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <p class="section-eyebrow">Full Collection</p>
+      <h1 class="page-title">Every LUMIS.<br /><em>Find Yours.</em></h1>
+    </div>
+  </header>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="container">
+      <div class="filter-bar__inner">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="wireless">Wireless</button>
+        <button class="filter-btn" data-filter="studio">Studio</button>
+        <button class="filter-btn" data-filter="sport">Sport</button>
+      </div>
+      <div class="sort-bar">
+        <label for="sortSelect">Sort:</label>
+        <select id="sortSelect" class="sort-select">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: Low–High</option>
+          <option value="price-desc">Price: High–Low</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS FULL GRID -->
+  <main class="products-main">
+    <div class="container">
+      <div class="products-full-grid" id="productsGrid">
+
+        <!-- Pro X -->
+        <article class="product-full-card" data-category="wireless" data-price="349">
+          <div class="product-full-card__image">
+            <div class="product-badge-label">Best Seller</div>
+            <svg viewBox="0 0 280 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M70 130 C70 86 94 58 140 58 C186 58 210 86 210 130" stroke="#D4BE98" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <rect x="50" y="118" width="36" height="50" rx="13" fill="#161616" stroke="#D4BE98" stroke-width="1.5"/>
+              <rect x="194" y="118" width="36" height="50" rx="13" fill="#161616" stroke="#D4BE98" stroke-width="1.5"/>
+              <ellipse cx="68" cy="143" rx="10" ry="14" fill="none" stroke="rgba(212,190,152,0.25)" stroke-width="1"/>
+              <ellipse cx="212" cy="143" rx="10" ry="14" fill="none" stroke="rgba(212,190,152,0.25)" stroke-width="1"/>
+              <circle cx="68" cy="143" r="5" fill="rgba(212,190,152,0.08)"/>
+              <circle cx="212" cy="143" r="5" fill="rgba(212,190,152,0.08)"/>
+              <path d="M86 130 C86 98 108 74 140 74 C172 74 194 98 194 130" stroke="rgba(212,190,152,0.2)" stroke-width="1" fill="none" stroke-dasharray="5 5"/>
+            </svg>
+          </div>
+          <div class="product-full-card__body">
+            <div class="product-full-card__tag">Wireless ANC</div>
+            <h2 class="product-full-card__name">LUMIS Pro X</h2>
+            <p class="product-full-card__desc">Our most advanced headphone. Adaptive 6-mic ANC system silences up to 40dB of ambient noise. Liquid-crystal polymer drivers deliver Hi-Res Audio from 4Hz to 40kHz. LDAC support. Multipoint Bluetooth 5.3.</p>
+            <div class="product-full-card__specs">
+              <div class="mini-spec"><span>38h</span>Battery</div>
+              <div class="mini-spec"><span>40dB</span>ANC</div>
+              <div class="mini-spec"><span>280g</span>Weight</div>
+              <div class="mini-spec"><span>BT 5.3</span>Wireless</div>
+            </div>
+            <div class="product-full-card__colors">
+              <span class="color-dot color-dot--gold active" data-color="Midnight Gold"></span>
+              <span class="color-dot color-dot--black" data-color="Obsidian"></span>
+              <span class="color-dot color-dot--white" data-color="Arctic White"></span>
+              <span class="color-label" id="colorLabelProX">Midnight Gold</span>
+            </div>
+            <div class="product-full-card__price-row">
+              <div class="product-full-card__price">$349</div>
+              <button class="btn btn--primary" onclick="addToCart('LUMIS Pro X', 349)">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Studio -->
+        <article class="product-full-card" data-category="studio" data-price="249">
+          <div class="product-full-card__image product-full-card__image--blue">
+            <svg viewBox="0 0 280 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M75 130 C75 90 97 62 140 62 C183 62 205 90 205 130" stroke="#8BAFD4" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <rect x="56" y="118" width="34" height="46" rx="12" fill="#161616" stroke="#8BAFD4" stroke-width="1.5"/>
+              <rect x="190" y="118" width="34" height="46" rx="12" fill="#161616" stroke="#8BAFD4" stroke-width="1.5"/>
+              <ellipse cx="73" cy="141" rx="9" ry="13" fill="none" stroke="rgba(139,175,212,0.3)" stroke-width="1"/>
+              <ellipse cx="207" cy="141" rx="9" ry="13" fill="none" stroke="rgba(139,175,212,0.3)" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="product-full-card__body">
+            <div class="product-full-card__tag product-full-card__tag--blue">Studio</div>
+            <h2 class="product-full-card__name">LUMIS Studio</h2>
+            <p class="product-full-card__desc">Reference-grade monitoring headphones. Flat frequency response for accurate mixing and mastering. Detachable cable. Compatible with balanced 2.5mm & 4.4mm. Built for audio professionals.</p>
+            <div class="product-full-card__specs">
+              <div class="mini-spec mini-spec--blue"><span>28h</span>Battery</div>
+              <div class="mini-spec mini-spec--blue"><span>Flat</span>Response</div>
+              <div class="mini-spec mini-spec--blue"><span>290g</span>Weight</div>
+              <div class="mini-spec mini-spec--blue"><span>BT 5.2</span>Wireless</div>
+            </div>
+            <div class="product-full-card__colors">
+              <span class="color-dot color-dot--blue active" data-color="Studio Blue"></span>
+              <span class="color-dot color-dot--black" data-color="Obsidian"></span>
+              <span class="color-label" id="colorLabelStudio">Studio Blue</span>
+            </div>
+            <div class="product-full-card__price-row">
+              <div class="product-full-card__price">$249</div>
+              <button class="btn btn--outline" onclick="addToCart('LUMIS Studio', 249)">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Air -->
+        <article class="product-full-card" data-category="wireless" data-price="179">
+          <div class="product-full-card__image product-full-card__image--green">
+            <svg viewBox="0 0 280 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M85 128 C85 95 105 70 140 70 C175 70 195 95 195 128" stroke="#98D4A3" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <rect x="66" y="116" width="30" height="40" rx="11" fill="#161616" stroke="#98D4A3" stroke-width="1.5"/>
+              <rect x="184" y="116" width="30" height="40" rx="11" fill="#161616" stroke="#98D4A3" stroke-width="1.5"/>
+              <ellipse cx="81" cy="136" rx="7" ry="11" fill="none" stroke="rgba(152,212,163,0.3)" stroke-width="1"/>
+              <ellipse cx="199" cy="136" rx="7" ry="11" fill="none" stroke="rgba(152,212,163,0.3)" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="product-full-card__body">
+            <div class="product-full-card__tag product-full-card__tag--green">Everyday</div>
+            <h2 class="product-full-card__name">LUMIS Air</h2>
+            <p class="product-full-card__desc">Featherlight at 198g. Premium drivers in a compact form. Passive noise isolation. Quick Charge: 10 minutes for 3 hours of playback. The perfect everyday companion.</p>
+            <div class="product-full-card__specs">
+              <div class="mini-spec mini-spec--green"><span>28h</span>Battery</div>
+              <div class="mini-spec mini-spec--green"><span>Passive</span>Isolation</div>
+              <div class="mini-spec mini-spec--green"><span>198g</span>Weight</div>
+              <div class="mini-spec mini-spec--green"><span>BT 5.2</span>Wireless</div>
+            </div>
+            <div class="product-full-card__colors">
+              <span class="color-dot color-dot--green active" data-color="Forest Green"></span>
+              <span class="color-dot color-dot--black" data-color="Obsidian"></span>
+              <span class="color-dot color-dot--white" data-color="Arctic White"></span>
+              <span class="color-label" id="colorLabelAir">Forest Green</span>
+            </div>
+            <div class="product-full-card__price-row">
+              <div class="product-full-card__price">$179</div>
+              <button class="btn btn--outline btn--green" onclick="addToCart('LUMIS Air', 179)">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sport -->
+        <article class="product-full-card" data-category="sport" data-price="199">
+          <div class="product-full-card__image product-full-card__image--orange">
+            <svg viewBox="0 0 280 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M78 125 C78 88 100 62 140 62 C180 62 202 88 202 125" stroke="#D4A374" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <rect x="58" y="114" width="32" height="44" rx="10" fill="#161616" stroke="#D4A374" stroke-width="1.5"/>
+              <rect x="190" y="114" width="32" height="44" rx="10" fill="#161616" stroke="#D4A374" stroke-width="1.5"/>
+              <ellipse cx="74" cy="136" rx="8" ry="12" fill="none" stroke="rgba(212,163,116,0.3)" stroke-width="1"/>
+              <ellipse cx="206" cy="136" rx="8" ry="12" fill="none" stroke="rgba(212,163,116,0.3)" stroke-width="1"/>
+              <!-- Sport indicator dots -->
+              <circle cx="140" cy="185" r="4" fill="rgba(212,163,116,0.4)"/>
+              <circle cx="152" cy="185" r="3" fill="rgba(212,163,116,0.2)"/>
+              <circle cx="128" cy="185" r="3" fill="rgba(212,163,116,0.2)"/>
+            </svg>
+          </div>
+          <div class="product-full-card__body">
+            <div class="product-full-card__tag product-full-card__tag--orange">Sport</div>
+            <h2 class="product-full-card__name">LUMIS Sport</h2>
+            <p class="product-full-card__desc">IPX5 water resistance. Secure-fit ear hooks. High-energy audio profile tuned for training. Built-in HR sensor integration. Sweat-proof. Runs as hard as you do.</p>
+            <div class="product-full-card__specs">
+              <div class="mini-spec mini-spec--orange"><span>24h</span>Battery</div>
+              <div class="mini-spec mini-spec--orange"><span>IPX5</span>Water Resistant</div>
+              <div class="mini-spec mini-spec--orange"><span>220g</span>Weight</div>
+              <div class="mini-spec mini-spec--orange"><span>BT 5.3</span>Wireless</div>
+            </div>
+            <div class="product-full-card__colors">
+              <span class="color-dot color-dot--orange active" data-color="Trail Orange"></span>
+              <span class="color-dot color-dot--black" data-color="Obsidian"></span>
+              <span class="color-label" id="colorLabelSport">Trail Orange</span>
+            </div>
+            <div class="product-full-card__price-row">
+              <div class="product-full-card__price">$199</div>
+              <button class="btn btn--outline btn--orange" onclick="addToCart('LUMIS Sport', 199)">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- COMPARISON TABLE -->
+      <div class="comparison-section">
+        <h2 class="comparison-title">Compare All Models</h2>
+        <div class="comparison-table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Pro X<br /><span>$349</span></th>
+                <th>Studio<br /><span>$249</span></th>
+                <th>Air<br /><span>$179</span></th>
+                <th>Sport<br /><span>$199</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Battery Life</td><td>38h</td><td>28h</td><td>28h</td><td>24h</td></tr>
+              <tr><td>ANC</td><td>✓ Adaptive</td><td>✗</td><td>✗</td><td>✗</td></tr>
+              <tr><td>LDAC Support</td><td>✓</td><td>✓</td><td>✗</td><td>✗</td></tr>
+              <tr><td>Multipoint BT</td><td>3 devices</td><td>2 devices</td><td>1 device</td><td>1 device</td></tr>
+              <tr><td>Water Resistant</td><td>IPX3</td><td>—</td><td>IPX3</td><td>IPX5</td></tr>
+              <tr><td>Spatial Audio</td><td>✓</td><td>✗</td><td>✗</td><td>✗</td></tr>
+              <tr><td>Quick Charge</td><td>5min→3h</td><td>10min→3h</td><td>10min→3h</td><td>10min→2h</td></tr>
+              <tr><td>Weight</td><td>280g</td><td>290g</td><td>198g</td><td>220g</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">LUMIS</div>
+          <p class="footer__tagline">Engineered silence.<br />Boundless sound.</p>
+        </div>
+        <div class="footer__links-group">
+          <h4>Shop</h4>
+          <a href="products.html">LUMIS Pro X</a>
+          <a href="products.html">LUMIS Studio</a>
+          <a href="products.html">LUMIS Air</a>
+        </div>
+        <div class="footer__links-group">
+          <h4>Company</h4>
+          <a href="about.html">Our Story</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__links-group">
+          <h4>Support</h4>
+          <a href="contact.html">Help Center</a>
+          <a href="contact.html">Returns</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 LUMIS Audio. All rights reserved.</span>
+        <span>Privacy · Terms</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-sidebar__header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-sidebar__items" id="cartItems">
+      <p class="cart-empty">Your cart is empty.</p>
+    </div>
+    <div class="cart-sidebar__footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <a href="contact.html" class="btn btn--primary" style="width:100%;text-align:center;display:block">Proceed to Checkout</a>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
