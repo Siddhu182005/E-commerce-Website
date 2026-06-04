@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUMIS — Premium Wireless Headphones</title>
+  <meta name="description" content="LUMIS headphones. Engineered silence. Boundless sound. Premium wireless audio for the discerning listener." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">LUMIS</a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="nav__link active">Home</a></li>
+      <li><a href="products.html" class="nav__link">Products</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="btn-cart" id="cartBtn" aria-label="Cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav__burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__grain"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Introducing LUMIS Pro X</p>
+      <h1 class="hero__title">Engineered<br /><em>Silence.</em><br />Boundless Sound.</h1>
+      <p class="hero__sub">40mm liquid-crystal drivers. Adaptive ANC. 38-hour battery.<br />The last headphone you'll ever need.</p>
+      <div class="hero__cta">
+        <a href="products.html" class="btn btn--primary">Shop Now — $349</a>
+        <a href="about.html" class="btn btn--ghost">Our Story</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__product-ring"></div>
+      <div class="hero__product-glow"></div>
+      <svg class="hero__headphone-svg" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="160" cy="160" r="155" stroke="rgba(212,190,152,0.15)" stroke-width="1"/>
+        <circle cx="160" cy="160" r="120" stroke="rgba(212,190,152,0.1)" stroke-width="1"/>
+        <!-- Headphone arc -->
+        <path d="M80 160 C80 110 110 70 160 70 C210 70 240 110 240 160" stroke="#D4BE98" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <!-- Left cup -->
+        <rect x="58" y="148" width="38" height="52" rx="14" fill="#1a1a1a" stroke="#D4BE98" stroke-width="1.5"/>
+        <rect x="64" y="156" width="26" height="36" rx="10" fill="#111" stroke="rgba(212,190,152,0.3)" stroke-width="1"/>
+        <circle cx="77" cy="174" r="8" fill="rgba(212,190,152,0.05)" stroke="rgba(212,190,152,0.2)" stroke-width="1"/>
+        <!-- Right cup -->
+        <rect x="224" y="148" width="38" height="52" rx="14" fill="#1a1a1a" stroke="#D4BE98" stroke-width="1.5"/>
+        <rect x="230" y="156" width="26" height="36" rx="10" fill="#111" stroke="rgba(212,190,152,0.3)" stroke-width="1"/>
+        <circle cx="243" cy="174" r="8" fill="rgba(212,190,152,0.05)" stroke="rgba(212,190,152,0.2)" stroke-width="1"/>
+        <!-- Cushion details -->
+        <ellipse cx="77" cy="174" rx="10" ry="14" fill="none" stroke="rgba(212,190,152,0.15)" stroke-width="1"/>
+        <ellipse cx="243" cy="174" rx="10" ry="14" fill="none" stroke="rgba(212,190,152,0.15)" stroke-width="1"/>
+        <!-- Band details -->
+        <path d="M92 160 C92 120 118 88 160 88 C202 88 228 120 228 160" stroke="rgba(212,190,152,0.3)" stroke-width="1" fill="none" stroke-dasharray="4 4"/>
+        <!-- Logo on cup -->
+        <text x="69" y="179" font-family="serif" font-size="8" fill="rgba(212,190,152,0.6)" text-anchor="middle">L</text>
+        <text x="235" y="179" font-family="serif" font-size="8" fill="rgba(212,190,152,0.6)" text-anchor="middle">L</text>
+      </svg>
+      <div class="hero__badge">
+        <span class="badge__num">38h</span>
+        <span class="badge__label">Battery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES STRIP -->
+  <section class="features-strip">
+    <div class="features-strip__inner">
+      <div class="feature-pill">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Adaptive ANC
+      </div>
+      <div class="feature-pill">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+        Hi-Res Audio
+      </div>
+      <div class="feature-pill">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+        38h Battery
+      </div>
+      <div class="feature-pill">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Spatial Audio
+      </div>
+      <div class="feature-pill">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        EQ App
+      </div>
+      <div class="feature-pill">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        2-Yr Warranty
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">The Collection</p>
+        <h2 class="section-title">Choose Your Sound</h2>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card product-card--featured">
+          <div class="product-card__badge">Best Seller</div>
+          <div class="product-card__visual">
+            <svg viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 100 C50 68 72 45 100 45 C128 45 150 68 150 100" stroke="#D4BE98" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <rect x="36" y="92" width="26" height="36" rx="10" fill="#1a1a1a" stroke="#D4BE98" stroke-width="1.5"/>
+              <rect x="138" y="92" width="26" height="36" rx="10" fill="#1a1a1a" stroke="#D4BE98" stroke-width="1.5"/>
+              <ellipse cx="49" cy="110" rx="7" ry="10" fill="none" stroke="rgba(212,190,152,0.3)" stroke-width="1"/>
+              <ellipse cx="151" cy="110" rx="7" ry="10" fill="none" stroke="rgba(212,190,152,0.3)" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">LUMIS Pro X</h3>
+            <p class="product-card__desc">Our flagship. Adaptive ANC, 38h battery, liquid-crystal drivers.</p>
+            <div class="product-card__price">$349</div>
+            <button class="btn btn--primary btn--sm" onclick="addToCart('LUMIS Pro X', 349)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__visual product-card__visual--alt">
+            <svg viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M55 100 C55 72 75 50 100 50 C125 50 145 72 145 100" stroke="#8BAFD4" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <rect x="42" y="93" width="24" height="32" rx="9" fill="#1a1a1a" stroke="#8BAFD4" stroke-width="1.5"/>
+              <rect x="134" y="93" width="24" height="32" rx="9" fill="#1a1a1a" stroke="#8BAFD4" stroke-width="1.5"/>
+              <ellipse cx="54" cy="109" rx="6" ry="9" fill="none" stroke="rgba(139,175,212,0.3)" stroke-width="1"/>
+              <ellipse cx="146" cy="109" rx="6" ry="9" fill="none" stroke="rgba(139,175,212,0.3)" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">LUMIS Studio</h3>
+            <p class="product-card__desc">Reference-grade monitoring. Flat response. Built for creators.</p>
+            <div class="product-card__price">$249</div>
+            <button class="btn btn--outline btn--sm" onclick="addToCart('LUMIS Studio', 249)">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__visual product-card__visual--green">
+            <svg viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60 100 C60 75 78 55 100 55 C122 55 140 75 140 100" stroke="#98D4A3" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <rect x="48" y="93" width="22" height="28" rx="8" fill="#1a1a1a" stroke="#98D4A3" stroke-width="1.5"/>
+              <rect x="130" y="93" width="22" height="28" rx="8" fill="#1a1a1a" stroke="#98D4A3" stroke-width="1.5"/>
+              <ellipse cx="59" cy="107" rx="5" ry="8" fill="none" stroke="rgba(152,212,163,0.3)" stroke-width="1"/>
+              <ellipse cx="141" cy="107" rx="5" ry="8" fill="none" stroke="rgba(152,212,163,0.3)" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">LUMIS Air</h3>
+            <p class="product-card__desc">Featherlight. 28h battery. Perfect everyday companion.</p>
+            <div class="product-card__price">$179</div>
+            <button class="btn btn--outline btn--sm" onclick="addToCart('LUMIS Air', 179)">Add to Cart</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="section-cta">
+        <a href="products.html" class="btn btn--ghost">View All Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS SECTION -->
+  <section class="specs-section">
+    <div class="container">
+      <div class="specs-layout">
+        <div class="specs-visual">
+          <div class="specs-card">
+            <div class="specs-ring">
+              <svg viewBox="0 0 240 240" fill="none">
+                <circle cx="120" cy="120" r="110" stroke="rgba(212,190,152,0.08)" stroke-width="1"/>
+                <circle cx="120" cy="120" r="85" stroke="rgba(212,190,152,0.12)" stroke-width="1"/>
+                <circle cx="120" cy="120" r="60" fill="rgba(212,190,152,0.04)" stroke="rgba(212,190,152,0.2)" stroke-width="1.5"/>
+                <text x="120" y="113" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="28" fill="#D4BE98" font-weight="300">38h</text>
+                <text x="120" y="133" text-anchor="middle" font-family="'DM Sans', sans-serif" font-size="9" fill="rgba(212,190,152,0.5)" letter-spacing="2">BATTERY LIFE</text>
+              </svg>
+            </div>
+            <div class="specs-stats">
+              <div class="spec-item">
+                <span class="spec-val">40dB</span>
+                <span class="spec-key">ANC Depth</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-val">40mm</span>
+                <span class="spec-key">Driver Size</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-val">5min</span>
+                <span class="spec-key">Quick Charge → 3h</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-val">280g</span>
+                <span class="spec-key">Weight</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="specs-content">
+          <p class="section-eyebrow">Technical Excellence</p>
+          <h2 class="section-title">Every Detail,<br /><em>Obsessed Over</em></h2>
+          <p class="specs-body">LUMIS Pro X is the result of four years of acoustic engineering. Our proprietary liquid-crystal polymer diaphragm delivers frequency response from 4Hz to 40kHz — well beyond what competitors offer. Pair this with our adaptive 6-mic ANC system and you get silence on demand, music on command.</p>
+          <ul class="specs-list">
+            <li>Bluetooth 5.3 with multipoint (3 devices)</li>
+            <li>LDAC / AAC / SBC codec support</li>
+            <li>Spatial audio with head tracking</li>
+            <li>USB-C & 3.5mm analog input</li>
+            <li>Foldable design, aircraft-grade aluminum</li>
+          </ul>
+          <a href="products.html" class="btn btn--primary">See Full Specs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What People Say</p>
+        <h2 class="section-title">Heard Around<br />the World</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">"I've owned every flagship headphone on the market. LUMIS Pro X made me sell them all."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">AM</div>
+            <div>
+              <div class="testimonial__name">Arjun Mehta</div>
+              <div class="testimonial__role">Audio Engineer, Mumbai</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial testimonial--accent">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">"The ANC is genuinely magic. I work in an open office and it's become essential. Battery life is absurd — I charge it once a week."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">SL</div>
+            <div>
+              <div class="testimonial__name">Sophie Laurent</div>
+              <div class="testimonial__role">Product Designer, Paris</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">"Took these on a 14-hour flight. Landed refreshed. The comfort and silence are something else entirely."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">KT</div>
+            <div>
+              <div class="testimonial__name">Kenji Takahashi</div>
+              <div class="testimonial__role">Software Architect, Tokyo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER / CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg"></div>
+    <div class="container">
+      <div class="cta-banner__content">
+        <h2 class="cta-banner__title">Free Shipping.<br />Free Returns. Always.</h2>
+        <p class="cta-banner__sub">Order by midnight, ships tomorrow. 30-day trial — no questions asked.</p>
+        <a href="products.html" class="btn btn--primary btn--lg">Order LUMIS Pro X</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">LUMIS</div>
+          <p class="footer__tagline">Engineered silence.<br />Boundless sound.</p>
+        </div>
+        <div class="footer__links-group">
+          <h4>Shop</h4>
+          <a href="products.html">LUMIS Pro X</a>
+          <a href="products.html">LUMIS Studio</a>
+          <a href="products.html">LUMIS Air</a>
+          <a href="products.html">Accessories</a>
+        </div>
+        <div class="footer__links-group">
+          <h4>Company</h4>
+          <a href="about.html">Our Story</a>
+          <a href="about.html">Technology</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__links-group">
+          <h4>Support</h4>
+          <a href="contact.html">Help Center</a>
+          <a href="contact.html">Warranty</a>
+          <a href="contact.html">Returns</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 LUMIS Audio. All rights reserved.</span>
+        <span>Privacy · Terms</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-sidebar__header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-sidebar__items" id="cartItems">
+      <p class="cart-empty">Your cart is empty.</p>
+    </div>
+    <div class="cart-sidebar__footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <a href="contact.html" class="btn btn--primary" style="width:100%;text-align:center;display:block">Proceed to Checkout</a>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
