@@ -1,0 +1,275 @@
+/* ============================================
+   LUMIS AUDIO — contact.css
+   ============================================ */
+
+.contact-header {
+  padding: calc(var(--nav-h) + 72px) 0 72px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-2);
+}
+
+.contact-main {
+  padding: 72px 0 120px;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* Form Card */
+.contact-form-card {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+}
+.form-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.form-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 24px;
+}
+.form-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.req { color: var(--gold); }
+.optional { font-size: 10px; color: var(--text-faint); text-transform: none; letter-spacing: 0; }
+
+.form-input {
+  width: 100%;
+  background: var(--bg-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 300;
+  padding: 14px 16px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  outline: none;
+}
+.form-input::placeholder { color: var(--text-faint); }
+.form-input:focus {
+  border-color: var(--border-gold);
+  box-shadow: 0 0 0 3px rgba(212,190,152,0.06);
+}
+.form-input.error { border-color: #e88; }
+.form-input.success { border-color: rgba(152,212,163,0.5); }
+.form-textarea { resize: vertical; min-height: 120px; }
+.form-select { cursor: pointer; }
+.form-select option { background: var(--bg-3); }
+
+.form-error {
+  font-size: 12px;
+  color: #e88;
+  margin-top: 6px;
+  min-height: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.char-count {
+  font-size: 11px;
+  color: var(--text-faint);
+  text-align: right;
+  margin-top: 6px;
+}
+.char-count.warn { color: #D4A374; }
+.char-count.over { color: #e88; }
+
+/* Checkbox */
+.form-checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.form-checkbox {
+  width: 18px; height: 18px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: var(--bg-4);
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: var(--transition);
+  position: relative;
+}
+.form-checkbox:checked {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+.form-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 5px; top: 2px;
+  width: 5px; height: 9px;
+  border: 2px solid #0d0d0d;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+}
+.checkbox-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+/* Submit */
+#submitBtn {
+  position: relative;
+  overflow: hidden;
+}
+#submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Success */
+.form-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 48px 24px;
+  text-align: center;
+  border: 1px solid rgba(152,212,163,0.2);
+  border-radius: var(--radius);
+  background: rgba(152,212,163,0.04);
+  margin-bottom: 24px;
+}
+.form-success p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  position: sticky;
+  top: calc(var(--nav-h) + 24px);
+}
+.contact-info-block h3 {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.contact-info-block p,
+.contact-info-block address {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.contact-info-note {
+  font-size: 13px;
+  color: var(--text-faint) !important;
+  margin-top: 8px;
+}
+.contact-link {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--text-muted);
+  transition: color var(--transition);
+  margin-bottom: 4px;
+}
+.contact-link:hover { color: var(--gold); }
+
+/* Social Links */
+.social-links { display: flex; flex-direction: column; gap: 10px; }
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+.social-link:hover { color: var(--gold); }
+
+/* FAQ */
+.contact-faq h3 {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.faq-list { display: flex; flex-direction: column; }
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: left;
+  gap: 12px;
+  transition: color var(--transition);
+}
+.faq-question:hover { color: var(--text); }
+.faq-question[aria-expanded="true"] { color: var(--gold); }
+.faq-icon {
+  flex-shrink: 0;
+  transition: transform var(--transition);
+  color: var(--text-faint);
+}
+.faq-question[aria-expanded="true"] .faq-icon {
+  transform: rotate(180deg);
+  color: var(--gold);
+}
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0;
+}
+.faq-answer.open {
+  max-height: 200px;
+  padding-bottom: 14px;
+}
+.faq-answer p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-layout { grid-template-columns: 1fr; }
+  .contact-info { position: static; }
+  .contact-form-card { padding: 32px 24px; }
+}
